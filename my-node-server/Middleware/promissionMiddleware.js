@@ -3,10 +3,11 @@
    req.user = {
      id: 123,
      nama: 'User Karyawan',
-     role: 'karyawan'
+     role: 'admin'
    };
    next(); 
  };
+ 
  
  exports.isAdmin = (req, res, next) => {
    if (req.user && req.user.role === 'admin') {
